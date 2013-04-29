@@ -13,3 +13,5 @@ On the secondary interface there should be a single Elastic IP only on one of th
 
 That Elastic IP is the VIP moved between the instances and is identified by the AllocationID.
 
+Please look at the script for parameters and options.
+
