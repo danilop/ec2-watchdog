@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# A simple script for Amazon EC2 to monitor another HA node and take over a Virtual IP (VIP)
-# if the service on the other node fails.
+# EC2-WatchDog is a simple (bash) script for Amazon EC2 to monitor another node for HA
+# and take over a Virtual IP (VIP) if the service on the other node fails
 
 # The script is inspired by the following article:
 # - Leveraging Multiple IP Addresses for Virtual IP Address Fail-over in 6 Simple Steps
