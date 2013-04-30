@@ -1,7 +1,7 @@
-ec2-watchdog
+EC2-WatchDog
 ============
 
-A simple script for Amazon EC2 to monitor another HA node and take over a Virtual IP (VIP) if the service on the other node fails.
+EC2-WatchDog is a simple (bash) script for Amazon EC2 to monitor another node for HA and take over a Virtual IP (VIP) if the service on the other node fails
 
 The script is inspired by the following article:
 
