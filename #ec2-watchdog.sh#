@@ -1,17 +1,14 @@
 #!/usr/bin/env bash
 # A simple script for Amazon EC2 to monitor another HA node and take over a Virtual IP (VIP)
-# if the service on the other node fails.
+# if the service on the other node fails
 
 # The script is inspired by the following article:
 # - Leveraging Multiple IP Addresses for Virtual IP Address Fail-over in 6 Simple Steps
 #   http://aws.amazon.com/articles/2127188135977316
 
-# One of the main differences is that here you can check that a service is working
-# on the other node with different protocols, i.e. using ICMP, TCP and/or HTTP/HTTPS.
-
-# The two instances must have both two Network Interfaces and an Elastic IP on the primary interface.
-# On the secondary interface there should be a single Elastic IP only on one of the two instances.
-# That Elastic IP is the VIP moved between the instances and is identified by the AllocationID.
+# The two instances must have both two Network Interfaces and an Elastic IP on the primary interface
+# On the secondary:q interface there should be a single Elastic IP only on one of the two instances
+# That Elastic IP is the VIP moved between the instances and is identified by the AllocationID
 
 # Time in seconds between checks
 Check_Time=2
@@ -25,7 +22,7 @@ Timeout_nc=5
 Timeout_wget=5
 
 # High Availability IP variables
-# Other node's IP, TCP Port, HTTP/HTTPS URL to check, and EIP Allocation ID to swap if other node goes down
+# Other node's IP to ping, TCP Port, HTTP URL to check, and EIP Allocation ID to swap if other node goes down
 Other_Node_IP=X.X.X.X
 Other_Node_Port=80
 Other_Node_URL=http://${Other_Node_IP}:${Other_Node_Port}/
