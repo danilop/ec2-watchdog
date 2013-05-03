@@ -13,8 +13,8 @@ The two instances must have both two Network Interfaces and an Elastic IP on the
 On the secondary interface there should be a single Elastic IP on one of the two instances.
 That Elastic IP is the VIP moved between the instances and is identified by the AllocationID.
 
-The script can easily be customized to work in EC2 "classic" if required, replacing the Allocation ID with the Elastic IP Address:
-
-http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/ApiReference-cmd-AssociateAddress.html
+The script can easily be customized to work in EC2 "classic" if required,
+replacing the Allocation ID with the Elastic IP Address in the invocation of the command line tool, as explained
+[here](http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/ApiReference-cmd-AssociateAddress.html).
 
 Please look at the script for parameters and options.
