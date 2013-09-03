@@ -18,3 +18,7 @@ replacing the Allocation ID with the Elastic IP Address in the invocation of the
 [here](http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/ApiReference-cmd-AssociateAddress.html).
 
 Please look at the script for parameters and options.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/danilop/ec2-watchdog/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
